@@ -6,7 +6,7 @@ package com.xy1m.concurrent.communication.threadlocal;
 public class Tools2 {
     public static ThreadLocal t = new ThreadLocal();
 
-    public static class ThreadA extends Thread {
+    static class ThreadA extends Thread {
         public void run() {
             try {
                 for (int i = 0; i < 100; i++) {
@@ -23,7 +23,7 @@ public class Tools2 {
         }
     }
 
-    public static class ThreadB extends Thread {
+    static class ThreadB extends Thread {
         public void run() {
             try {
                 for (int i = 0; i < 100; i++) {

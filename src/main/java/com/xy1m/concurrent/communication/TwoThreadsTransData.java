@@ -32,7 +32,7 @@ public class TwoThreadsTransData {
                 for (int i = 0; i < 10; i++) {
                     list.add();
                     System.out.println("Added " + (i + 1) + " element");
-                    Thread.sleep(1000);
+                    Thread.sleep(3000);
                 }
             }
             catch (InterruptedException e) {
@@ -53,6 +53,7 @@ public class TwoThreadsTransData {
         public void run() {
             try {
                 while (true) {
+                    Thread.sleep(100);
                     if (list.size() == 5) {
                         System.out.println("==5, ThreadB is going to exit");
                         throw new InterruptedException();
