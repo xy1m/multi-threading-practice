@@ -13,6 +13,7 @@ class Consumer implements Runnable {
         try {
             while (true) {
                 System.out.println("Thread=" + Thread.currentThread().getId() + ":" + queue.take());
+                Thread.sleep(1000);
             }
         }
         catch (InterruptedException e) {
