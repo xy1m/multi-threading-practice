@@ -7,7 +7,7 @@ import java.util.TimerTask;
 /**
  * Created by gzhenpeng on 8/15/18
  */
-public class TimerExample {
+public class TimerRun {
     private static Timer timer = new Timer();
 
     public static class MyClass extends TimerTask {
